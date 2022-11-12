@@ -1,0 +1,34 @@
+.main-container-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  height: 90vh;
+}
+
+.my-form {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .my-form {
+    width: 100%;
+  }
+}
