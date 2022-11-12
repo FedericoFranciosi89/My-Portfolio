@@ -1,0 +1,23 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.film-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .film-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.film-title {
+  margin-top: 1.5rem;
+}
